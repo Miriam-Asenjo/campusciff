@@ -64,3 +64,14 @@ El fichero readme.md se creo al crear el repositorio en github seleccionando che
 2.13 Subir los cambios al repositorio remoto
 
     git push origin v0.2
+
+2.14 Merge directo
+
+    git checkout master
+    git merge v0.2 -m "merge rama v0.2 en master"
+
+2.15 Merge con conflicto
+	
+	echo "Hola" >> 1.txt
+    git add .
+    git commit -m "Añadir Hola fichero 1.txt"

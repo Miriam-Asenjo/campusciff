@@ -70,8 +70,15 @@ El fichero readme.md se creo al crear el repositorio en github seleccionando che
     git checkout master
     git merge v0.2 -m "merge rama v0.2 en master"
 
-2.15 Merge con conflicto
+2.15 Merge con conflicto (I)
 	
 	echo "Hola" >> 1.txt
     git add .
     git commit -m "Añadir Hola fichero 1.txt"
+
+2.16 Merge con conflicto (II)
+	
+	git checkout v0.2
+    echo "Adios" >> 1.txt
+	git add .
+	git commit -m "Añadir Adios fichero 1.txt"

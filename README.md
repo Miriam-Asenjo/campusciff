@@ -18,4 +18,20 @@ El fichero readme.md se creo al crear el repositorio en github seleccionando che
     git add .
     git commit -m "commit inicial"
 
+2.5 Push inicial
 
+    git push origin master
+
+2.6 Ignorar archivos (I)
+
+	touch privado.txt
+	mkdir privada 
+
+2.7 Ignorar archivos (II)
+
+    vi .gitignore
+   Add entries .gitignore file
+![Alt "Modificar .gitignore file"](/images/entriesGitIgnoreFile.jpg)
+
+	git add .
+	git commit -m "añadiendo fichero .gitignore"

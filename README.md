@@ -35,3 +35,15 @@ El fichero readme.md se creo al crear el repositorio en github seleccionando che
 
 	git add .
 	git commit -m "añadiendo fichero .gitignore"
+
+2.8 Añadir fichero 1.txt
+
+    touch 1.txt
+    git add .
+    git commit -m "añadir fichero 1.txt"
+
+2.9 Crear el tag v0.1
+	git tag v0.1
+
+2.10 Subir el tag v0.1
+    git push --tag origin master

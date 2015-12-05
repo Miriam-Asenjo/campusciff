@@ -82,3 +82,27 @@ El fichero readme.md se creo al crear el repositorio en github seleccionando che
     echo "Adios" >> 1.txt
 	git add .
 	git commit -m "Añadir Adios fichero 1.txt"
+
+2.17 Merge con conflicto (III)
+
+    git checkout master
+	git merge v0.2 -m "merge branch v0.2 en master"
+
+![Alt "Conflicto merge"](/images/mergeConflicto.jpg)
+
+
+2.18 Listado de Ramas
+	
+	git branch --merged
+	git branch --no-merged
+
+2.19 Arreglar conflicto anterior
+
+   Resolver conflictos merge manualmente
+
+	vi 1.txt
+
+![Alt "Resolver conflictos merge manualmente"](/images/resolverConflictosMergeManualmente.jpg)
+
+    git add .
+    git commit -m "conflictos merge resueltos"

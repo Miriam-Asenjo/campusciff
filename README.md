@@ -154,7 +154,7 @@ Siguiendo los repositorios campus ciff de los siguientes compañeros y start the
 ![Alt "Crear Organizacion"](/images/campusCiff-MiriamAsenjoOrganizacion.jpg)
 
 **2.27**.- Crear equipos
-
+![Alt "Crear Equipos"](/images/equiposGitOrganizacion.jpg)
 
 **2.28**.- Crear un index.html 
 Crear repositorio campusciff-miriam-asenjo.github.io en organización campus ciff
@@ -174,6 +174,7 @@ Clono el segundo for y añado un cambio
 	git checkout miriamchanges
 	
 añado mi nombre en fichero index.html
+
     git add .
     git commit -m "miriam: aniado mi nombre en index.html"
     git push origin miriamchanges
@@ -182,3 +183,26 @@ Pull Request
 ![Alt "Pull Request"](/images/pullRequest1.jpg)
 
 **2.30** Aceptar los Pull Request que lleguen a mi organizacion
+
+Ejemplo PullRequest sobre repositorio campusciff-Miriam-Asenjo.github.io por el usuario ciffSara 
+
+    git checkout -b campusciff-ciffSara-ramaSara master
+    git pull https://github.com/campusciff-ciffSara/campusciff-Miriam-Asenjo.github.io.git ramaSara
+
+	git checkout master
+	git merge --no-ff campusciff-ciffSara-ramaSara
+	git push origin master
+
+Ejemplo PullRequest sobre repositorio campusciff-Miriam-Asenjo.github.io por el usuario ciffcesarhernandez
+
+    git checkout -b campusciff-ciffcesarhernandez-brCESAR master
+    git pull https://github.com/campusciff-ciffcesarhernandez/campusciff-Miriam-Asenjo.github.io.git brCESAR
+Conflictos auto-merge failed
+
+	vi index.html
+	git add .
+	git commit -m "resolving conflict in index.html"
+
+    git checkout master
+	git merge --no-ff campusciff-ciffcesarhernandez-brCESAR
+    git push origin master
